@@ -154,9 +154,13 @@ nav ul li a:hover {
 /* for mobile */	
 @media (max-width:414px){
 .intro {
+	position: relative;
 	margin-top: 10px;
 	margin-bottom: 80px;
 	text-align: center;
+	width: 95%;
+	left: 50%;
+	transform: translate(-50%,0);
 	}
 
 
