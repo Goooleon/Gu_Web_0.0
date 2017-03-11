@@ -5,8 +5,34 @@ body {
 	padding: 0;
 	margin: 0;
 	}
+	
+/*for mobile*/
+@media (max-width:414px) {
+#logo {
+	position: fixed;
+	width: 60px;
+	height: 60px;	
+	left: 40px;
+	top: 30px;
+	background-image:url(../img/Logo-line.svg);
+	}
+	
+header {
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 75px;
+	top: 0;
+	background-color: #EBEBEB;
+	opacity: 0.9;	
+	border-bottom: #E2E2E2 solid 1px;
+	z-index: 1;
+	}
+	}
 
-
+/*for desktop*/
+@media (min-width:414px) {
 #logo {
 	position: fixed;
 	width: 70px;
@@ -27,6 +53,7 @@ header {
 	opacity: 0.9;	
 	border-bottom: #E2E2E2 solid 1px;
 	z-index: 1;
+	}
 	}
 	
 nav {
@@ -97,11 +124,14 @@ nav ul li a:hover {
 	margin-bottom: 100px;
 	}
 
+/* for desktop */	
+@media (min-width:414px){
 .intro {
 	margin-top: 20px;
 	margin-bottom: 130px;
 	text-align: center;
 	}
+
 
 .intro h1 {
 	font-size: 50px;
@@ -109,8 +139,7 @@ nav ul li a:hover {
 	letter-spacing: 15px;
 	margin-bottom: 60px;
 	color: #262C2B;
-	}
-	
+	}	
 	
 .intro p {
 	font-size: 30px;
@@ -120,13 +149,44 @@ nav ul li a:hover {
 	letter-spacing: 1px;
 	color: #262C2B;
 	}
+}
+
+/* for mobile */	
+@media (max-width:414px){
+.intro {
+	margin-top: 10px;
+	margin-bottom: 80px;
+	text-align: center;
+	}
+
+
+.intro h1 {
+	font-size: 30px;
+	font-family: "Ping Hei";
+	letter-spacing: 10px;
+	margin-bottom: 40px;
+	color: #262C2B;
+	}	
+	
+.intro p {
+	padding: 5px;
+	font-size: 18px;
+	font-family: "Ping Hei Text";
+	line-height: 150%;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+	color: #262C2B;
+	}
+}
 
 .map {
 	width:100%;
-	height: 600px;
+	padding-top: 60%;
 	background-color: #FCFCFC;
 	}
 
+/* for desktop */	
+@media (min-width:414px){
 .describe {
 	margin-bottom: 100px;
 	padding-left: 15%;
@@ -144,10 +204,39 @@ nav ul li a:hover {
 	font-size: 27px;
 	font-family: "Ping Hei Text";
 	line-height: 150%;
+	word-spacing: 1px;
+	color: #262C2B;
+	margin-bottom: 5px;
+	}
+}
+
+/* for mobile */	
+@media (max-width:414px){
+.describe {
+	position: relative;
+	width: 90%;
+	left: 50%;
+	transform:translate(-50%,0);
+	margin-bottom: 80px;
+	}
+
+.describe h2 {
+	font-size: 25px;
+	font-family: "pinghei";
+	letter-spacing: 10px;
+	margin-bottom: 40px;
+	color: #262C2B;
+	}
+	
+.describe P {
+	font-size: 18px;
+	font-family: "Ping Hei Text";
+	line-height: 150%;
 	word-spacing: 2px;
 	color: #262C2B;
 	margin-bottom: 5px;
 	}
+}
 
 .content-grey {
 	position: relative;
@@ -158,7 +247,7 @@ nav ul li a:hover {
 
 /* this is for desktop*/
 
-@media (min-width:450px) {		
+@media (min-width:414px) {		
 .column {
 	position: relative;
 	left: 15%;
@@ -192,7 +281,7 @@ nav ul li a:hover {
 
 /* this is for mobile*/
 
-@media (max-width:450px) {
+@media (max-width:414px) {
    .column {
 	position: relative;
 	width: 100%;
@@ -241,7 +330,7 @@ nav ul li a:hover {
 	}
 
 /* this is for desktop*/	
-@media (min-width:450px) {
+@media (min-width:414px) {
 .gallery-item {
 	position: relative;
 	float: left;
@@ -255,7 +344,7 @@ nav ul li a:hover {
 	}
 
 /* this is for mobile*/	
-@media (max-width:450px) {
+@media (max-width:414px) {
 .gallery-item {
 	float: left;
 	margin-right: 0.5%;
@@ -273,6 +362,8 @@ nav ul li a:hover {
 	bottom: -50px;
 	}
 
+/* for desktop */	
+@media (min-width:414px){
 #contact {
 	position: relative;
 	left: 50%;
@@ -287,7 +378,22 @@ nav ul li a:hover {
 	
 #email {
 	width: 60%;}
+}
 
+/* for mobile */	
+@media (max-width:414px){
+#contact {
+	position: relative;
+	left: 50%;
+	transform:translate(-50%,0);
+	width:90%;
+	margin-top: 3%;
+	}
+
+#name {width: 95%;}
+#email {width: 95%;}
+
+}
 
 input[type=text], select, #comment{
     width: 95%;
@@ -310,7 +416,7 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 10px 2px;
 	border-radius: 4px;
     cursor: pointer;
 	}
