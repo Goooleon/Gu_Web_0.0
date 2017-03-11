@@ -6,13 +6,6 @@ body {
 	margin: 0;
 	}
 
-/*	
-@media (max-width: 600px){
-	body {
-		background-color:#E5A4A5;
-		}
-	}
-*/
 
 #logo {
 	position: fixed;
@@ -279,6 +272,49 @@ nav ul li a:hover {
 	text-align: center;
 	bottom: -50px;
 	}
+
+#contact {
+	position: relative;
+	left: 50%;
+	transform:translate(-50%,0);
+	width:70%;
+	margin-top: 3%;
+	}
+
+#name {
+	width: 32%;
+	margin-right: 2%;}
+	
+#email {
+	width: 60%;}
+
+
+input[type=text], select, #comment{
+    width: 95%;
+    padding: 12px 20px;	
+    margin: 8px 0 2%;
+    display: inline-block;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size:16px;
+    }
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+	border-radius: 4px;
+    cursor: pointer;
+	}
+
 
 footer{
 	position: relative;
