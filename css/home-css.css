@@ -12,7 +12,7 @@ body {
 	position: fixed;
 	width: 60px;
 	height: 60px;	
-	left: 40px;
+	left: 13%;
 	top: 28px;
 	z-index: 1;
 	background-image:url(../img/Logo-line.svg);
@@ -97,45 +97,58 @@ ul li a:hover {
 	ul {
 		position: fixed;
 		display: none;
-		top: 55px;
+		top: 59px;
 		width: 100%;
-		background-color: #EBEBEB;
-		padding: 20px;
+		background-color: #F7F7F7;
+		padding: 0px;
+		padding-bottom: 20px;
+		z-index:0;
+		border-bottom: #E2E2E2 solid 1px;
 	}
 	/*Create vertical spacing*/
 	ul li {
+		position: relative;
+		width: 60%;
+		left: 50%;
+		transform:translate(-50%,0);
+		top: 8px;
 		display: block;
-		margin-bottom: 40px;
+		margin-top: 10px;
+		margin-bottom: 30px;
 		text-align:center;
+		border-bottom: solid 1px #EBEBEB;
 	}
 	/*Make all menu links full width*/
 	ul li, li a {
-		width: 100%;
-		padding: 10px;
-		background-color:#B88F8F;
+		padding: 10px 10px 20px 10px;
 		text-decoration: none;
 		color: #262C2B;
 		text-decoration: none;
-		font-size: 18px;
+		font-size: 20px;
 		font-family: "Futura LT book", sans-serif;
-		letter-spacing: 2px;
+		letter-spacing: 10px;
 	}
+	
+	#lang {
+		font-size: 15px;
+		letter-spacing: 2px;}
+	
 	/*Display 'show menu' link*/
 	.show-menu {
 		display:block;
-	}
 	}
 	
 
 /*Style 'show menu' label button and hide it by default*/
 .show-menu {
-	position: relative;
-	left: 80%;
+	position: absolute;
+	right: 13%;
 	top: 50%;
 	transform:translate(0,-50%);
 	width: 28px;
 	height: 18px;
 	background-image: url(../img/nav.svg);
+}
 }
 
 input[type=checkbox] {
