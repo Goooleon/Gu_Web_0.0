@@ -165,7 +165,7 @@ input[type=checkbox]:checked ~ #menu{
 	width: 100%;}
 
 /*for desktop and tablet*/
-@media (min-width::;px) {
+@media (min-width:414px) {
 #banner {
 	width: 100%;
 	padding-top: 60%;
@@ -190,7 +190,7 @@ input[type=checkbox]:checked ~ #menu{
 @media (max-width:414px) {
 #banner {
 	width: 100%;
-	height: 500px;
+	height: 520px;
 	background-image: url(../img/home/banner.jpg);
 	background-size: cover;
 	background-repeat:no-repeat;
@@ -232,7 +232,7 @@ input[type=checkbox]:checked ~ #menu{
 
 .intro h1 {
 	font-size: 50px;
-	font-family: "Ping Hei";
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
 	letter-spacing: 15px;
 	margin-bottom: 60px;
 	color: #262C2B;
@@ -263,7 +263,7 @@ input[type=checkbox]:checked ~ #menu{
 
 .intro h1 {
 	font-size: 40px;
-	font-family: "Ping Hei";
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
 	letter-spacing: 10px;
 	margin-bottom: 40px;
 	color: #262C2B;
@@ -295,7 +295,7 @@ input[type=checkbox]:checked ~ #menu{
 
 .intro h1 {
 	font-size: 30px;
-	font-family: "Ping Hei";
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
 	letter-spacing: 10px;
 	margin-bottom: 40px;
 	color: #262C2B;
@@ -304,7 +304,7 @@ input[type=checkbox]:checked ~ #menu{
 .intro p {
 	padding: 5px;
 	font-size: 18px;
-	font-family: "Ping Hei Text";
+	font-famil:;
 	line-height: 150%;
 	word-spacing: 2px;
 	letter-spacing: 1px;
@@ -376,68 +376,54 @@ input[type=checkbox]:checked ~ #menu{
 .content-grey {
 	position: relative;
 	background-color: #F5F5F5;
-	padding-top: 130px;
+	padding-top: 8%;
+	padding-bottom: 6%;
+	height: auto;
 	margin-bottom: 50px;
 	}
 
-/* this is for desktop*/
-
-@media (min-width:414px) {		
-.column {
+.row {
 	position: relative;
 	left: 15%;
 	width: 70%;
-	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-around;
 	}
 	
-.card {
-	float: left;
+.card, .card-margin {
 	width: 45%;
-	height: 0;
-	padding-bottom: 40%;
+	height: auto;
 	background-color: #FFFFFF;
-	margin-right: 10%;
-	margin-bottom: 15%;
+	margin-bottom: 110px;
 	}
-	
-.card:nth-child(2n) {margin-right: 0;}	
     
-.bg-img {
+
+.card img, .card-margin img {
 	width: 100%;
-	padding-top: 60%;
-	background-color: #e1e1e1;
-	}
-	
+	}	
+
+.card-margin{margin-bottom: 0;}
+
 .info {
-	
-	padding-bottom: 10%;
-	margin-bottom: 5%;}
-	}
+	margin-bottom: auto;}
+
 
 /* this is for mobile*/
 
 @media (max-width:414px) {
-   .column {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	}
+
 	
-	.card {
-	float: left;
+.card, .card-margin {
 	width: 100%;
-	height: 0;
-	padding-bottom: 88.88%;
+	height: auto;
 	background-color: #FFFFFF;
-	margin-right: 10%;
-	margin-bottom: 20%;
+	margin-bottom: 50px;	
 	}
 	
-.bg-img {
-	width: 100%;
-	padding-top: 60%;
-	background-color: #e1e1e1;
-	}
+.card img {
+	width: 100%;}
     }
 
 .info {
@@ -447,7 +433,7 @@ input[type=checkbox]:checked ~ #menu{
 .more-de {
 	position: relative;
 	text-align: center;
-	bottom: 35px;
+	bottom: 30px;
 	}
 	
 .link {
@@ -456,38 +442,37 @@ input[type=checkbox]:checked ~ #menu{
 	font-size: 15px;
 	font-family: "Ping Hei Text";
 	letter-spacing: 1px;
-	word-spacing: 5px;}
+	word-spacing: 5px;
+	}
 	
 .gallery {
 	position: relative;
 	width: 98%;
+	height: auto;
 	left: 1%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
 	}
+	
 
-/* this is for desktop*/	
-@media (min-width:414px) {
 .gallery-item {
-	position: relative;
-	float: left;
-	margin-right: 0.5%;
-	margin-left: 0.5%;
-	margin-bottom: 1%;
-	width: 24%;
-	padding-top: 15%;
-	background-color: #e1e1e1;
-	}
-	}
+	margin-bottom: 2.5px;
+	width: 24.5%;
+	height: auto;
+}
+
+.gallery-item img {
+	border-radius: 2px;
+	width: 100%;
+	height: auto;}
 
 /* this is for mobile*/	
 @media (max-width:414px) {
 .gallery-item {
-	float: left;
-	margin-right: 0.5%;
-	margin-left: 0.5%;
-	margin-bottom: 1%;
-	width: 32.33%;
-	padding-top: 21%;
-	background-color: #e1e1e1;
+	width: 32%;
+	margin-bottom: 1px;
 	}
 	}
 
@@ -564,11 +549,11 @@ footer{
 	background-color: #F5F5F5;
 	}
 	
-footer p {
+footer #cp {
 	position: absolute;
-	left: 50%;
-	transform: translate(-50%,0);
-	font-size: 15px;
+	left: 2.5%;
+	width: 95%;
+	font-size: 12px;
 	bottom: 50px;
 	text-align: center;
 	color: #9A9A9A;}
