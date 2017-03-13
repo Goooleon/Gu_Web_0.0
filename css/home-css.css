@@ -218,7 +218,7 @@ input[type=checkbox]:checked ~ #menu{
 .content {
 	position: relative;
 	padding-top: 50px;
-	margin-bottom: 100px;
+	margin-bottom: 0px;
 	}
 
 /* for desktop */	
@@ -284,14 +284,13 @@ input[type=checkbox]:checked ~ #menu{
 @media (max-width:414px){
 .intro {
 	position: relative;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-bottom: 80px;
 	text-align: center;
 	width: 95%;
 	left: 50%;
 	transform: translate(-50%,0);
 	}
-
 
 .intro h1 {
 	font-size: 30px;
@@ -311,7 +310,6 @@ input[type=checkbox]:checked ~ #menu{
 	color: #262C2B;
 	}
 }
-
 
 
 .map {
@@ -377,7 +375,7 @@ input[type=checkbox]:checked ~ #menu{
 	position: relative;
 	background-color: #F5F5F5;
 	padding-top: 8%;
-	padding-bottom: 6%;
+	padding-bottom: 5%;
 	height: auto;
 	margin-bottom: 50px;
 	}
@@ -413,8 +411,10 @@ input[type=checkbox]:checked ~ #menu{
 /* this is for mobile*/
 
 @media (max-width:414px) {
+.row {
+	width: 100%;
+	left:0;}
 
-	
 .card, .card-margin {
 	width: 100%;
 	height: auto;
@@ -424,17 +424,12 @@ input[type=checkbox]:checked ~ #menu{
 	
 .card img {
 	width: 100%;}
+
     }
 
 .info {
 	margin: 0;
 	padding: 5%;}
-
-.more-de {
-	position: relative;
-	text-align: center;
-	bottom: 30px;
-	}
 	
 .link {
 	text-decoration: none;
@@ -479,7 +474,7 @@ input[type=checkbox]:checked ~ #menu{
 .more-ex {
 	position: relative;
 	text-align: center;
-	bottom: -50px;
+	top: 10px;
 	}
 
 /* for desktop */	
