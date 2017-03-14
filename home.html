@@ -5,6 +5,7 @@
 <title>Gu design</title>
 <link rel="stylesheet" type="text/css" href="css/home-css.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script src="home.js"></script>
 </head>
 
 <body>
@@ -16,8 +17,7 @@
 
 <header>
 <a href="home.html"><div id="logo"></div></a>
-	<label for="show-menu" class="show-menu"></label>
-	<input type="checkbox" id="show-menu" role="button">
+	<span for="show-menu" class="show-menu"  onclick="openNav()"></span>
 		<ul id="menu">
         	<li><a href="#" class="active">Home</a></li>
             <li><a href="#">Works</a></li>
@@ -25,6 +25,16 @@
             <li><a href="#"><span id="lang">中 / En</span></a></li>
         </ul>
 </header>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Home</a>
+    <a href="#">Works</a>
+    <a href="#">Blog</a>
+    <a href="#"><span id="lang">中 / En</span></a>
+  </div>
+</div>
 
 
 
@@ -138,7 +148,9 @@
         <div class="gallery-item"><a href="#" ><img  src="img/home/gallery/Aurora (48).jpg" draggable="false" alt="aurora"></a></div>
         <div class="gallery-item"><a href="#" ><img  src="img/home/gallery/Aurora (48).jpg" draggable="false" alt="aurora"></a></div>
      	
-    </div> 
+        </div> 
+        
+    
     <p class="more-ex"><a class="link" href="#">View More Works</a></p>
 
     </div>
