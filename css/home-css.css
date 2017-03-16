@@ -586,26 +586,16 @@ footer{
 	margin-top: 100px;
 	width: 100%;
 	height: 450px;
-	background-color: #F5F5F5;
+	background-color: #E3E3E3;
 	}
 	
-footer #btt{
-	position: absolute;
-	left: 50%;
-	transform:translate(-50%,0);
-	border-radius: 50px;
-	top: -35px;
-	width: 90px;
-	height: 90px;
-	background-color:#F5F5F5;
-	z-index: -1;}
 	
 footer #btt-arrow {
 	position:absolute;
 	width: 90px;
 	height: 90px;
 	left: 50%;
-	top: -55px;
+	top: -40px;
 	transform:translate(-50%,0);
 	}
 	
@@ -667,8 +657,10 @@ footer #follow a{
 /* this is for mobile*/	
 @media (max-width:414px) {
 	#follow i{
-	font-size: 30px;
-	margin: 0 5px;}
+	position: relative;
+	left: 4%;
+	font-size: 35px;
+	margin: 0 6px;}
 	
 	footer .btm-info{
 	width: 95%;
@@ -689,11 +681,7 @@ footer #follow a{
 	font-size: 25px;}
 	
 	footer .btm-info p {
-	font-size: 13px;}
-	
-	footer #cp {
-	font-size: 9px;}
-
+	font-size: 15px;}
 	}
 	
 footer #follow a:hover{
@@ -706,11 +694,16 @@ footer #follow i{
 .fa fa-facebook-official {
 	color: #BCBCBC;}
 	
+
 footer #cp {
 	position: absolute;
-	left: 2.5%;
-	width: 95%;
-	font-size: 12px;
-	bottom: 50px;
+	left: 5%;
+	width: 90%;
+	bottom: 8%;
 	text-align: center;
-	color: #9A9A9A;}
+	}
+	
+footer #cp p {
+	font-size: 11px;
+	color: #B9B9B9;
+	}
