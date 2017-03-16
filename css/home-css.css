@@ -13,7 +13,7 @@ body {
 	width: 60px;
 	height: 60px;	
 	left: 13%;
-	top: 28px;
+	top: 18px;
 	z-index: 1;
 	background-image:url(../img/Logo-line.svg);
 	}
@@ -23,7 +23,7 @@ header {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 75px;
+	height: 65px;
 	top: 0;
 	background-color: #EBEBEB;
 	opacity: 0.95;	
@@ -158,7 +158,7 @@ ul li a:hover {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .overlay-content {
@@ -277,6 +277,9 @@ ul li a:hover {
 	letter-spacing: 1px;
 	color: #262C2B;
 	}
+	
+#intro-contact {
+	margin-top: 80px;}
 }
 
 /* for tablet */	
@@ -309,6 +312,7 @@ ul li a:hover {
 	letter-spacing: 1px;
 	color: #262C2B;
 	}
+	
 }
 
 /* for mobile */	
@@ -316,7 +320,7 @@ ul li a:hover {
 .intro {
 	position: relative;
 	margin-top: 5px;
-	margin-bottom: 80px;
+	margin-bottom: 25px;
 	text-align: center;
 	width: 95%;
 	left: 50%;
@@ -346,7 +350,9 @@ ul li a:hover {
 .map {
 	width:100%;
 	padding-top: 50%;
-	background-color: #FCFCFC;
+	background-image: url(../img/amCharts-highlight.svg);
+	background-repeat:no-repeat;
+	margin-bottom: 10%;
 	}
 
 /* for desktop */	
@@ -497,13 +503,11 @@ ul li a:hover {
 .gallery-item img:hover{
 	filter: grayscale(100%);}
 	
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
+.more-ex {
+	position: relative;
+	text-align: center;
+	top: 35px;
+	}
 
 /* this is for mobile*/	
 @media (max-width:414px) {
@@ -511,12 +515,10 @@ ul li a:hover {
 	width: 32%;
 	margin-bottom: 1px;
 	}
-	}
-
+	
 .more-ex {
-	position: relative;
-	text-align: center;
-	top: 10px;
+	top: 8px;
+	}
 	}
 
 /* for desktop */	
@@ -581,10 +583,128 @@ button {
 
 footer{
 	position: relative;
+	margin-top: 100px;
 	width: 100%;
-	height: 500px;
+	height: 450px;
 	background-color: #F5F5F5;
 	}
+	
+footer #btt{
+	position: absolute;
+	left: 50%;
+	transform:translate(-50%,0);
+	border-radius: 50px;
+	top: -35px;
+	width: 90px;
+	height: 90px;
+	background-color:#F5F5F5;
+	z-index: -1;}
+	
+footer #btt-arrow {
+	position:absolute;
+	width: 90px;
+	height: 90px;
+	left: 50%;
+	top: -55px;
+	transform:translate(-50%,0);
+	}
+	
+#arrow-color {cursor: pointer;}
+	
+#arrow-color:hover {
+	fill: #262C2B;}
+	
+footer .btm-info{
+	position:relative;
+	width: 80%;
+	left: 10%;
+	top: 22%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	color: #262C2B;}
+	
+footer .btm-info h2 {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 30px;
+	margin-bottom: 6%;
+	letter-spacing: 2px;}
+
+footer #thanks{
+	width: 40%;}
+
+footer #thanks a, p{
+	color: #929292;
+	text-decoration: none;}
+
+	
+footer .important-info {
+	font-style: italic;
+	color: #262C2B;
+}	
+
+footer #follow{
+	width: 40%;}
+
+#follow i{
+	font-size: 50px;}
+
+footer #follow a{
+	color: #929292;}
+	
+/* for tablet */	
+@media (max-width:768px){
+	#follow i{
+	font-size: 40px;}
+	
+	footer .btm-info{
+	width: 90%;
+	left: 5%;
+	top: 15%;
+    }
+	}
+	
+/* this is for mobile*/	
+@media (max-width:414px) {
+	#follow i{
+	font-size: 30px;
+	margin: 0 5px;}
+	
+	footer .btm-info{
+	width: 95%;
+	left: 2.5%;
+	top:5%;
+    }
+	
+	footer #thanks{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;}
+	
+	footer #follow{
+	text-align: center;
+	width: 100%;}
+	
+	footer .btm-info h2 {
+	font-size: 25px;}
+	
+	footer .btm-info p {
+	font-size: 13px;}
+	
+	footer #cp {
+	font-size: 9px;}
+
+	}
+	
+footer #follow a:hover{
+	color: #262C2B;}
+	
+footer #follow i{
+	margin-top: 2%;
+	margin-right: 7%;}
+	
+.fa fa-facebook-official {
+	color: #BCBCBC;}
 	
 footer #cp {
 	position: absolute;
