@@ -427,6 +427,9 @@ ul li a:hover {
 	align-content: space-around;
 	}
 	
+.row a {
+	text-decoration: none;}
+	
 .card, .card-margin {
 	width: 45%;
 	height: auto;
@@ -440,9 +443,6 @@ ul li a:hover {
 	}	
 
 .card-margin{margin-bottom: 0;}
-
-.info {
-	margin-bottom: auto;}
 
 
 /* this is for mobile*/
@@ -461,12 +461,31 @@ ul li a:hover {
 	
 .card img {
 	width: 100%;}
-
+	
+.detail {
+	font-size: 14px;}
     }
-
+	
 .info {
 	margin: 0;
-	padding: 5%;}
+	padding: 2% 10%;
+	margin-bottom: auto;
+	}
+	
+.info h3 {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color: #262C2B;
+	margin-bottom:  -8px;}
+	
+.detail {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #737373;
+	margin-top: -1px;}
+	
+.date {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color: #BCBCBC;
+	font-size: 13px;}
 	
 .link {
 	text-decoration: none;
