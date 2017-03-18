@@ -194,6 +194,199 @@ ul li a:hover {
 }
 
 
+/*content here*/
+.content {
+	position: relative;
+	top: 100px;
+	margin-bottom: 400px;
+	height: 100%;
+	width: 80%;
+	left: 10%;
+	}
+
+
+.describe {
+	text-align: center;
+	margin-bottom: 50px;
+	padding: 5%;}
+	
+.describe h2{
+	font-size: 35px;
+	font-family: "pinghei";
+	letter-spacing: 10px;
+	margin-bottom: 50px;
+	color: #262C2B;
+	}
+	
+.describe p{
+	font-size: 27px;
+	font-family: "Ping Hei Text";
+	line-height: 150%;
+	word-spacing: 1px;
+	color: #262C2B;
+	margin-bottom: 5px;}
+
+/*for mobile*/
+@media (max-width:414px) {
+.describe h2{
+	font-size: 25px;
+	}
+	
+.describe p{
+	font-size: 18px;}
+	}
+
+
+	
+.bowl {
+	position: relative;
+	width: 82%;
+	left: 9%;}
+
+.bowl a{
+	text-decoration: none;}
+
+.cover {
+	width: 100%;
+	margin-bottom: 100px;
+	text-decoration: none;
+	position: relative;
+	color:#262C2B;
+	width: 100%;
+	height: auto;
+	transition: ease 0.5s;
+	background-color: #FFFFFF;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+	}
+	
+
+
+.cover:hover {
+    transform: scale(1.01,1.01);
+	}
+	
+
+.cover-img {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 280px;
+	text-align: center;
+	transition: ease 0.5s;
+	}
+
+
+.cover h3 {
+	position: absolute;
+	float: left;
+	left: 6%;
+	width: 16%;
+	padding: 1% 2%;
+	margin-top: 4%;
+	border-right: solid 1px #D0D0D0;
+	z-index: 1;
+	color: #262C2B;}
+	
+.info-date {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color: #BCBCBC;
+	font-size: 13px;}
+	
+.cover p {
+	position: inherit;
+	padding: 5% 0;
+	padding-left: 5%;
+	left: 24%;	
+	width: 65%;
+	margin: 0;
+	color: #737373;
+    text-align: justify;
+    text-justify: inter-word;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	}
+	
+/*for & tablet*/
+@media (max-width:768px) {
+.bowl {
+	position: relative;
+	width: 100%;
+	left: 0;}
+	
+.cover h3 {
+	left: 4%;
+}
+	
+.cover p {
+	padding: 4% 0;
+	padding-left: 5%;
+	}	
+}
+
+/*for mobile*/
+@media (max-width:414px) {
+.content {
+	width: 100%;
+	left: 0;
+	margin-bottom: 300px;
+	}
+	
+
+.bowl {
+	position: relative;
+	width: 100%;
+	left: 0;}
+	
+.cover h3 {
+	position: relative;
+	float: none;
+	text-align: center;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-right: none;
+	}
+	
+.info-date {
+	font-size: 12px;}
+
+.cover-img {
+	height: 230px;
+	}
+	
+.cover p {
+	position: inherit;
+	padding: 5% 0;
+	left: 7.5%;	
+	width: 85%;
+	margin: 0;
+	color: #737373;
+    text-align: justify;
+    text-justify: inter-word;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+
+	}
+	}
+
+#r01 {
+	background-image: url(../img/blog/in%20finland/cover.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	}
+	
+#r02 {
+	background-image: url(../img/blog/fear/fear-cover.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	}
+	
+#r03 {
+	background-image: url(../img/blog/Into%20Tibet/into-tibet-cover.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	}
+
 
 footer{
 	position: relative;

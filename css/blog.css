@@ -203,7 +203,7 @@ ul li a:hover {
 	width: 80%;
 	left: 10%;
 	}
-	
+
 
 .describe {
 	text-align: center;
@@ -226,6 +226,18 @@ ul li a:hover {
 	color: #262C2B;
 	margin-bottom: 5px;}
 
+/*for mobile*/
+@media (max-width:414px) {
+.describe h2{
+	font-size: 25px;
+	}
+	
+.describe p{
+	font-size: 18px;}
+	}
+
+
+	
 .bowl {
 	position: relative;
 	width: 82%;
@@ -246,6 +258,8 @@ ul li a:hover {
 	background-color: #FFFFFF;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
 	}
+	
+
 
 .cover:hover {
     transform: scale(1.01,1.01);
@@ -290,6 +304,69 @@ ul li a:hover {
     text-align: justify;
     text-justify: inter-word;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	}
+	
+/*for & tablet*/
+@media (max-width:768px) {
+.bowl {
+	position: relative;
+	width: 100%;
+	left: 0;}
+	
+.cover h3 {
+	left: 4%;
+}
+	
+.cover p {
+	padding: 4% 0;
+	padding-left: 5%;
+	}	
+}
+
+/*for mobile*/
+@media (max-width:414px) {
+.content {
+	width: 100%;
+	left: 0;
+	margin-bottom: 300px;
+	}
+	
+
+.bowl {
+	position: relative;
+	width: 100%;
+	left: 0;}
+	
+.cover h3 {
+	position: relative;
+	float: none;
+	text-align: center;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-right: none;
+	}
+	
+.info-date {
+	font-size: 12px;}
+
+.cover-img {
+	height: 230px;
+	}
+	
+.cover p {
+	position: inherit;
+	padding: 5% 0;
+	left: 7.5%;	
+	width: 85%;
+	margin: 0;
+	color: #737373;
+    text-align: justify;
+    text-justify: inter-word;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+
+	}
 	}
 
 #r01 {
