@@ -338,7 +338,7 @@ ul li a:hover {
 .intro p {
 	padding: 5px;
 	font-size: 18px;
-	font-famil:;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	line-height: 150%;
 	word-spacing: 2px;
 	letter-spacing: 1px;
@@ -432,6 +432,7 @@ ul li a:hover {
 	
 .card, .card-margin {
 	width: 45%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
 	height: auto;
 	background-color: #FFFFFF;
 	margin-bottom: 110px;
@@ -453,6 +454,7 @@ ul li a:hover {
 	left:0;}
 
 .card, .card-margin {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
 	width: 100%;
 	height: auto;
 	background-color: #FFFFFF;

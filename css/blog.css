@@ -1,0 +1,442 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #F5F5F5;
+	}
+	
+/*for mobile & tablet*/
+@media (max-width:768px) {
+#logo {
+	position: fixed;
+	width: 60px;
+	height: 60px;	
+	left: 13%;
+	top: 18px;
+	z-index: 1;
+	background-image:url(../img/Logo-line.svg);
+	}
+	
+header {
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 65px;
+	top: 0;
+	background-color: #EBEBEB;
+	opacity: 0.95;	
+	border-bottom: #E2E2E2 solid 1px;
+	z-index: 1;
+	}
+	}
+
+/*for desktop*/
+@media (min-width:769px) {
+#logo {
+	position: fixed;
+	width: 70px;
+	height: 70px;	
+	left: 90px;
+	top: 35px;
+	background-image:url(../img/Logo-line.svg);
+	}
+	
+header {
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 90px;
+	top: 0;
+	background-color: #EBEBEB;
+	opacity: 0.9;	
+	border-bottom: #E2E2E2 solid 1px;
+	z-index: 1;
+	}
+	}
+
+/*for desktop*/
+@media (min-width:769px) {
+ul {
+	position: fixed;
+	top: 20px;
+	right: 5%;
+	}
+
+ul li {
+	text-decoration: none;
+	display: inline;
+	margin-right: 30px;
+	}
+	
+ul li a {
+    color: #262C2B;
+    text-decoration: none;
+	font-size: 18px;
+	font-family: "Futura LT book", sans-serif;
+	letter-spacing: 2px;
+	}
+	
+ul li a:hover {
+	border-bottom: solid 1px #262C2B;}
+
+.active {
+	border-bottom: solid 1px #262C2B;}	
+	
+#lang {
+	font-size: 15px;
+	}
+}
+
+
+/*for mobile & tablet*/
+@media (max-width:768px) {
+	/*Make dropdown links appear inline*/
+	ul {
+		position: fixed;
+		display: none;
+		top: 59px;
+		width: 100%;
+		background-color: #F7F7F7;
+		padding: 0px;
+		padding-bottom: 20px;
+		z-index:0;
+		border-bottom: #E2E2E2 solid 1px;
+	}
+	/*Create vertical spacing*/
+	ul li {
+		position: relative;
+		width: 60%;
+		left: 50%;
+		transform:translate(-50%,0);
+		top: 8px;
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 30px;
+		text-align:center;
+		border-bottom: solid 1px #EBEBEB;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		padding: 10px 10px 20px 10px;
+		text-decoration: none;
+		color: #262C2B;
+		text-decoration: none;
+		font-size: 20px;
+		font-family: "Futura LT book", sans-serif;
+		letter-spacing: 10px;
+	}
+	
+	#lang {
+		font-size: 15px;
+		letter-spacing: 2px;}
+	
+.show-menu {
+	display:block;
+	position: absolute;
+	right: 13%;
+	top: 50%;
+	transform:translate(0,-50%);
+	width: 28px;
+	height: 18px;
+	background-image: url(../img/nav.svg);
+	cursor: pointer;
+}
+}
+
+/*js nav*/
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.4s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+	font-family:  "Futura LT book", sans-serif;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/*content here*/
+.content {
+	position: relative;
+	top: 100px;
+	margin-bottom: 400px;
+	height: 100%;
+	width: 80%;
+	left: 10%;
+	}
+	
+
+.describe {
+	text-align: center;
+	margin-bottom: 50px;
+	padding: 5%;}
+	
+.describe h2{
+	font-size: 35px;
+	font-family: "pinghei";
+	letter-spacing: 10px;
+	margin-bottom: 50px;
+	color: #262C2B;
+	}
+	
+.describe p{
+	font-size: 27px;
+	font-family: "Ping Hei Text";
+	line-height: 150%;
+	word-spacing: 1px;
+	color: #262C2B;
+	margin-bottom: 5px;}
+
+.bowl {
+	position: relative;
+	width: 82%;
+	left: 9%;}
+
+.bowl a{
+	text-decoration: none;}
+
+.cover {
+	width: 100%;
+	margin-bottom: 100px;
+	text-decoration: none;
+	position: relative;
+	color:#262C2B;
+	width: 100%;
+	height: auto;
+	transition: ease 0.5s;
+	background-color: #FFFFFF;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+	}
+
+.cover:hover {
+    transform: scale(1.01,1.01);
+	}
+	
+
+.cover-img {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 280px;
+	text-align: center;
+	transition: ease 0.5s;
+	}
+
+
+.cover h3 {
+	position: absolute;
+	float: left;
+	left: 6%;
+	width: 16%;
+	padding: 1% 2%;
+	margin-top: 4%;
+	border-right: solid 1px #D0D0D0;
+	z-index: 1;
+	color: #262C2B;}
+	
+.info-date {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color: #BCBCBC;
+	font-size: 13px;}
+	
+.cover p {
+	position: inherit;
+	padding: 5% 0;
+	padding-left: 5%;
+	left: 24%;	
+	width: 65%;
+	margin: 0;
+	color: #737373;
+    text-align: justify;
+    text-justify: inter-word;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	}
+
+#r01 {
+	background-image: url(../img/blog/in%20finland/cover.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	}
+	
+#r02 {
+	background-image: url(../img/blog/fear/fear-cover.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	}
+	
+#r03 {
+	background-image: url(../img/blog/Into%20Tibet/into-tibet-cover.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	}
+
+
+
+footer{
+	position: relative;
+	margin-top: 100px;
+	width: 100%;
+	height: 450px;
+	background-color: #EBEBEB;
+	}
+	
+	
+footer #btt-arrow {
+	position:absolute;
+	width: 90px;
+	height: 90px;
+	left: 50%;
+	top: -40px;
+	transform:translate(-50%,0);
+	}
+	
+#arrow-color {cursor: pointer;}
+	
+#arrow-color:hover {
+	fill: #262C2B;}
+	
+footer .btm-info{
+	position:relative;
+	width: 80%;
+	left: 10%;
+	top: 22%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	color: #262C2B;}
+	
+footer .btm-info h2 {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 30px;
+	margin-bottom: 6%;
+	letter-spacing: 2px;}
+
+footer #thanks{
+	width: 40%;}
+
+footer #thanks a, p{
+	color: #929292;
+	text-decoration: none;}
+
+	
+footer .important-info {
+	font-style: italic;
+	color: #262C2B;
+}	
+
+footer #follow{
+	width: 40%;}
+
+#follow i{
+	font-size: 50px;}
+
+footer #follow a{
+	color: #929292;}
+	
+/* for tablet */	
+@media (max-width:768px){
+	#follow i{
+	font-size: 40px;}
+	
+	footer .btm-info{
+	width: 90%;
+	left: 5%;
+	top: 15%;
+    }
+	}
+	
+/* this is for mobile*/	
+@media (max-width:414px) {
+	#follow i{
+	position: relative;
+	left: 4%;
+	font-size: 35px;
+	margin: 0 6px;}
+	
+	footer .btm-info{
+	width: 95%;
+	left: 2.5%;
+	top: 8%;
+    }
+	
+	footer #thanks{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;}
+	
+	footer #follow{
+	text-align: center;
+	width: 100%;}
+	
+	footer .btm-info h2 {
+	font-size: 25px;}
+	
+	footer .btm-info p {
+	font-size: 15px;}
+	}
+	
+footer #follow a:hover{
+	color: #262C2B;}
+	
+footer #follow i{
+	margin-top: 2%;
+	margin-right: 7%;}
+	
+.fa fa-facebook-official {
+	color: #BCBCBC;}
+	
+
+footer #cp {
+	position: absolute;
+	left: 5%;
+	width: 90%;
+	bottom: 8%;
+	text-align: center;
+	}
+	
+footer #cp p {
+	font-size: 11px;
+	color: #B9B9B9;
+	}
+
+
