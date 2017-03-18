@@ -290,7 +290,6 @@ ul li a:hover {
 
 
 /* this is for mobile*/
-
 @media (max-width:414px) {
 .content {
 	left: 0;
@@ -303,11 +302,7 @@ ul li a:hover {
 	left:0;}
 
 .card, .card-margin {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
 	width: 100%;
-	height: auto;
-	background-color: #FFFFFF;
-	margin-bottom: 50px;	
 	}
 	
 .card img {
@@ -315,6 +310,11 @@ ul li a:hover {
 	
 .detail {
 	font-size: 14px;}
+    }
+	
+/* this is for tablet*/
+@media (max-width: 768px) {	
+
     }
 	
 .info {
