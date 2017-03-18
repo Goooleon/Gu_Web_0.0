@@ -198,17 +198,17 @@ ul li a:hover {
 .content {
 	position: relative;
 	top: 100px;
-	margin-bottom: 400px;
+	margin-bottom: 300px;
 	height: 100%;
 	width: 80%;
 	left: 10%;
 	}
 
-
 .describe {
 	text-align: center;
-	margin-bottom: 50px;
-	padding: 5%;}
+	margin-bottom: 0;
+	padding: 5%;
+	}
 	
 .describe h2{
 	font-size: 35px;
@@ -235,157 +235,118 @@ ul li a:hover {
 .describe p{
 	font-size: 18px;}
 	}
+	
+.tab {
+	position: relative;
+	border: solid 2px #95989A;
+	border-radius: 10px; 
+	padding: 0.2% ;
+	width: 100%;
+	display: flex;
+	flex-align: row;
+	justify-content: space-between;
+	margin-bottom: 60px;}
 
+.tab a {
+	text-decoration: none;
+	padding: 5px 20px;
+	margin: 1px;
+	border-radius: 6px;
+	background-color: #C4E0CB;
+	}
+
+.row {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-around;
+	}
+	
+.row a {
+	text-decoration: none;}
+	
+.card, .card-margin {
+	width: 30%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+	height: auto;
+	background-color: #FFFFFF;
+	margin-bottom: 70px;
+	transition: ease 0.5s;
+	}
 
 	
-.bowl {
-	position: relative;
-	width: 82%;
-	left: 9%;}
+.card:hover {
+    transform: scale(1.02,1.02);
+	}
+    
 
-.bowl a{
-	text-decoration: none;}
-
-.cover {
+.card img, .card-margin img {
 	width: 100%;
-	margin-bottom: 100px;
-	text-decoration: none;
-	position: relative;
-	color:#262C2B;
+	}	
+
+.card-margin{margin-bottom: 0;}
+
+
+/* this is for mobile*/
+
+@media (max-width:414px) {
+.content {
+	left: 0;
+	width: 100%;
+	margin-bottom: 200px;
+	}	
+
+.row {
+	width: 100%;
+	left:0;}
+
+.card, .card-margin {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
 	width: 100%;
 	height: auto;
-	transition: ease 0.5s;
 	background-color: #FFFFFF;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+	margin-bottom: 50px;	
 	}
 	
-
-
-.cover:hover {
-    transform: scale(1.01,1.01);
-	}
+.card img {
+	width: 100%;}
 	
-
-.cover-img {
-	display: block;
+.detail {
+	font-size: 14px;}
+    }
+	
+.info {
 	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 280px;
-	text-align: center;
-	transition: ease 0.5s;
+	padding: 2% 10%;
+	margin-bottom: auto;
 	}
-
-
-.cover h3 {
-	position: absolute;
-	float: left;
-	left: 6%;
-	width: 16%;
-	padding: 1% 2%;
-	margin-top: 4%;
-	border-right: solid 1px #D0D0D0;
-	z-index: 1;
-	color: #262C2B;}
 	
-.info-date {
+.info h3 {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color: #262C2B;
+	margin-bottom:  -8px;}
+	
+.detail {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #737373;
+	margin-top: -1px;}
+	
+.date {
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 	color: #BCBCBC;
 	font-size: 13px;}
 	
-.cover p {
-	position: inherit;
-	padding: 5% 0;
-	padding-left: 5%;
-	left: 24%;	
-	width: 65%;
-	margin: 0;
-	color: #737373;
-    text-align: justify;
-    text-justify: inter-word;
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
-	}
-	
-/*for & tablet*/
-@media (max-width:768px) {
-.bowl {
-	position: relative;
-	width: 100%;
-	left: 0;}
-	
-.cover h3 {
-	left: 4%;
-}
-	
-.cover p {
-	padding: 4% 0;
-	padding-left: 5%;
-	}	
-}
-
-/*for mobile*/
-@media (max-width:414px) {
-.content {
-	width: 100%;
-	left: 0;
-	margin-bottom: 300px;
-	}
-	
-
-.bowl {
-	position: relative;
-	width: 100%;
-	left: 0;}
-	
-.cover h3 {
-	position: relative;
-	float: none;
-	text-align: center;
-	left: 0;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	border-right: none;
-	}
-	
-.info-date {
-	font-size: 12px;}
-
-.cover-img {
-	height: 230px;
-	}
-	
-.cover p {
-	position: inherit;
-	padding: 5% 0;
-	left: 7.5%;	
-	width: 85%;
-	margin: 0;
-	color: #737373;
-    text-align: justify;
-    text-justify: inter-word;
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
-
-	}
+.link {
+	text-decoration: none;
+	color: #262C2B;
+	font-size: 15px;
+	font-family: "Ping Hei Text";
+	letter-spacing: 1px;
+	word-spacing: 5px;
 	}
 
-#r01 {
-	background-image: url(../img/blog/in%20finland/cover.jpg);
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	}
-	
-#r02 {
-	background-image: url(../img/blog/fear/fear-cover.jpg);
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	}
-	
-#r03 {
-	background-image: url(../img/blog/Into%20Tibet/into-tibet-cover.jpg);
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	}
 
 
 footer{
