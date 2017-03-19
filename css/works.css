@@ -246,7 +246,7 @@ ul li a:hover {
 	flex-align: row;
 	justify-content: space-between;
 	margin-bottom: 60px;}
-
+	
 .tab a {
 	text-decoration: none;
 	padding: 5px 20px;
@@ -276,6 +276,8 @@ ul li a:hover {
 	transition: ease 0.5s;
 	}
 
+.tab-select {
+	display: none;}
 	
 .card:hover {
     transform: scale(1.02,1.02);
@@ -314,7 +316,25 @@ ul li a:hover {
 	
 /* this is for tablet*/
 @media (max-width: 768px) {	
-
+.tab{
+	display: none;}
+	
+.tab-select{
+	position: relative;
+	left: 10%;
+	display: block;
+	margin-bottom: 50px;
+	width: 80%;
+	text-align: center;}
+	
+.tab-select select{
+	width: 100%;
+	padding: 0 18px;
+	height: 45px;
+	border: solid 2px #95989A;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	}
     }
 	
 .info {
