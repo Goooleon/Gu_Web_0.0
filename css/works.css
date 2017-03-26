@@ -249,7 +249,7 @@ ul li a:hover {
 .row a {
 	text-decoration: none;}
 	
-.card, .card-margin {
+.tabcontent, .card-margin {
 	width: 30%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
 	height: auto;
@@ -258,12 +258,12 @@ ul li a:hover {
 	transition: ease 0.5s;
 	}
 
-.card:hover {
+.tabcontent:hover {
     transform: scale(1.02,1.02);
 	}
     
 
-.card img, .card-margin img {
+.tabcontent img, .card-margin img {
 	width: 100%;
 	}	
 
@@ -282,11 +282,11 @@ ul li a:hover {
 	width: 100%;
 	left:0;}
 
-.card, .card-margin {
+.tabcontent, .card-margin {
 	width: 100%;
 	}
 	
-.card img {
+.tabcontent img {
 	width: 100%;}
 	
 .detail {
