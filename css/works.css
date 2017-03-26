@@ -236,24 +236,6 @@ ul li a:hover {
 	font-size: 18px;}
 	}
 	
-.tab {
-	position: relative;
-	border: solid 2px #95989A;
-	border-radius: 10px; 
-	padding: 0.2% ;
-	width: 100%;
-	display: flex;
-	flex-align: row;
-	justify-content: space-between;
-	margin-bottom: 60px;}
-	
-.tab a {
-	text-decoration: none;
-	padding: 5px 20px;
-	margin: 1px;
-	border-radius: 6px;
-	background-color: #C4E0CB;
-	}
 
 .row {
 	position: relative;
@@ -276,9 +258,6 @@ ul li a:hover {
 	transition: ease 0.5s;
 	}
 
-.tab-select {
-	display: none;}
-	
 .card:hover {
     transform: scale(1.02,1.02);
 	}
@@ -312,29 +291,6 @@ ul li a:hover {
 	
 .detail {
 	font-size: 14px;}
-    }
-	
-/* this is for tablet*/
-@media (max-width: 768px) {	
-.tab{
-	display: none;}
-	
-.tab-select{
-	position: relative;
-	left: 10%;
-	display: block;
-	margin-bottom: 50px;
-	width: 80%;
-	text-align: center;}
-	
-.tab-select select{
-	width: 100%;
-	padding: 0 18px;
-	height: 45px;
-	border: solid 2px #95989A;
-	border-radius: 5px;
-	background-color: #FFFFFF;
-	}
     }
 	
 .info {
