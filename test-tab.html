@@ -47,54 +47,77 @@ div.tab button.active {
 
  <div class="tab">
   <button class="alltablinks">All</button>
-  <button class="tablinks" id="london">London</button>
-  <button class="tablinks" id="paris">Paris</button>
-  <button class="tablinks" id="tokyo">Tokyo</button>
+  <button class="tablinks" id="londontab">London</button>
+  <button class="tablinks" id="paristab">Paris</button>
+  <button class="tablinks" id="tokyotab">Tokyo</button>
 </div>
 
-<div id="londonContainer" class="tabcontent">
+<div class="london">
   <h3>London</h3>
   <p>London is the capital city of England.</p>
 </div>
 
-<div id="parisContainer" class="tabcontent">
-  <h3>Paris</h3>
+<divc class="london">
+  <h3>londondsadsadasdas</h3>
   <p>Paris is the capital of France.</p>
 </div>
 
-<div id="tokyoContainer"  class="tabcontent">
-  <h3>Tokyo</h3>
+<divc class="london">
+  <h3>londondsadsadasdas</h3>
+  <p>Paris is the capital of France.</p>
+</div><divc class="london">
+  <h3>londondsadsadasdas</h3>
+  <p>Paris is the capital of France.</p>
+</div><divc class="london">
+  <h3>londondsadsadasdas</h3>
+  <p>Paris is the capital of France.</p>
+</div><divc class="london">
+  <h3>londondsadsadasdas</h3>
+  <p>Paris is the capital of France.</p>
+</div><divc class="london">
+  <h3>londondsadsadasdas</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="paris">
+  <h3>parisssssssssssss</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
 
-<div id="dsa"  class="tabcontent">
-  <h3>dsadsadaso</h3>
+<div  class="tokyo">
+  <h3>tokyo hot</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div  class="tokyo">
+  <h3>hahahahahhahahhahaha</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
 
 <script>
 	(function ($) {
-		var allContentTabs = $('.tabcontent');
+		var londonContentTabs = $('.london');
+		var parisContentTabs = $('.paris');
+		var tokyoContentTabs = $('.tokyo');
 		$(document).ready(function() {
 			
 			$('.alltablinks').on('click', function(){
-				allContentTabs.show();
+				londonContentTabs.show();
+				parisContentTabs.show();
+				tokyoContentTabs.show();
 			});
 			
-			$('#tokyo').on('click', function(){
-				allContentTabs.hide();
-				$('#tokyoContainer').show();
+			
+			$('#londontab').on('click', function(){
+				parisContentTabs.hide();
+				tokyoContentTabs.hide();
+				$('.london').show();
 			});
 			
-			$('#paris').on('click', function(){
-				allContentTabs.hide();
-				$('#parisContainer').show();
-			});
-			
-			$('#london').on('click', function(){
-				allContentTabs.hide();
-				$('#londonContainer').show();
-				$('#dsa').show();
+			$('#paristab').on('click', function(){
+				tokyoContentTabs.hide(); 
+				londonContentTabs.hide();
+				$('.paris').show();
 			});
 			
 		});

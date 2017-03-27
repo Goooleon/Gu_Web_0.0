@@ -47,17 +47,18 @@
     
     
         <div class="tab">
-          <button class="alltablinks">All</button>
-          <button class="tablinks" id="industrialdesign">Industrial design</button>
-          <button class="tablinks" id="interactiondesign">Interaction design</button>
-          <button class="tablinks" id="communicationdesign">Communication design</button>
+          <button class="alltablinks">All /</button>
+          <button class="tablinks" id="industrialdesign">Industrial design /</button>
+          <button class="tablinks" id="exstdesign">Experience & strategy design /</button>         
+          <button class="tablinks" id="interactiondesign">Interaction design /</button>
+          <button class="tablinks" id="communicationdesign">Communication design /</button>
           <button class="tablinks" id="others">Others</button>
         </div>
 
     
         <div class="row">
         
-        <a href="#" class="tabcontent" id="idContainer">
+        <a href="#" class="tabcontent" id="idContainer-01">
             <img src="img/Works/ceramic/ceramic-cover.jpg" alt="Ceramic Work">
         <div class="info">
             <h3>Ceramic work</h3>
@@ -66,7 +67,7 @@
         </div>
         </a>
         
-        <a href="#" class="tabcontent" id="cdContainer">
+        <a href="#" class="tabcontent" id="cdContainer-02">
             <img src="img/Works/zhiqur/zhiqur-cover.jpg">
             <div class="info">
             <h3>Zhiqur</h3>
@@ -75,7 +76,7 @@
         </div>
         </a>
         
-        <a href="#" class="tabcontent" id="uxContainer">
+        <a href="#" class="tabcontent" id="ixContainer-01">
             <img src="img/Works/music-wall/Music-wall-cover.jpg">
             <div class="info">
             <h3>Music wall</h3>
@@ -84,7 +85,7 @@
         </div>
         </a> 
         
-        <a href="#" class="tabcontent" id="othersContainer">
+        <a href="#" class="tabcontent" id="exstContainer-02">
             <img src="img/Works/Experience Mapping/Experience-Mapping-cover.jpg">
         <div class="info">
             <h3>Experience mapping</h3>
@@ -93,7 +94,7 @@
         </div>
         </a>
         
-        <a href="#" class="tabcontent" id="cdContainer">
+        <a href="#" class="tabcontent" id="cdContainer-01">
             <img src="img/Works/Green chasing/green-chasing-cover.jpg">
             <div class="info">
             <h3>Green chasing</h3>
@@ -102,7 +103,7 @@
         </div>
         </a>
         
-        <a href="#" class="tabcontent" id="idContainer">
+        <a href="#" class="tabcontent" id="ixContainer-00">
             <img src="img/Works/dashboard design/deshboard-cover.jpg">
             <div class="info">
             <h3>Dashboard design</h3>
@@ -112,7 +113,7 @@
         </a> 
         
         
-         <a href="#" class="tabcontent" id="idContainer">
+         <a href="#" class="tabcontent" id="exstContainer-01">
             <img src="img/Works/my document/my-document-cover.jpg">
         <div class="info">
             <h3>My document</h3>
@@ -121,16 +122,16 @@
         </div>
         </a>
         
-        <a href="#" class="tabcontent" id="idContainer">
+        <a href="#" class="tabcontent" id="cdContainer-00">
             <img src="img/Works/info-graphic/info-graphic-cover.jpg">
             <div class="info">
-            <h3>Historial evolution of JNU</h3>
+            <h3>Evolution of JNU</h3>
             <p class="date">09 / 2016, Team work</p>
             <p class="detail">this is introduction to this project.</p>
         </div>
         </a>
         
-        <a href="#" class="tabcontent" id="idContainer">
+        <a href="#" class="tabcontent" id="exstContainer-00">
             <img src="img/Works/user-research/user-research-cover.jpg">
             <div class="info">
             <h3>User research</h3>
@@ -139,7 +140,7 @@
         </div>
         </a> 
         
-        <a href="#" class="tabcontent" id="idContainer">
+        <a href="#" class="tabcontent" id="idContainer-00">
             <img src="img/Works/power bank/power-bank-cover.jpg">
             <div class="info">
             <h3>Power bank</h3>
@@ -148,7 +149,7 @@
         </div>
         </a>
         
-        <a href="#" class="tabcontent" id="idContainer">
+        <a href="#" class="tabcontent" id="othersContainer-02">
             <img src="img/Works/modelling/modelling-cover.jpg">
             <div class="info">
             <h3>Modelling</h3>
@@ -157,7 +158,7 @@
         </div>
         </a> 
         
-        <a href="#" class="tabcontent" id="idContainer">
+        <a href="#" class="tabcontent" id="othersContainer-01">
             <img src="img/Works/color construction/color-cover.jpg">
         <div class="info">
             <h3>Color construction</h3>
@@ -166,7 +167,7 @@
         </div>
         </a>
         
-        <a href="#" class="tabcontent" id="othersContainer">
+        <a href="#" class="tabcontent" id="othersContainer-00">
             <img src="img/Works/Food Design/food-design-cover.jpg">
         <div class="info">
             <h3>Food design</h3>
@@ -223,27 +224,45 @@
 			
 			$('.alltablinks').on('click', function(){
 				allContentTabs.show();
-			});
+			}); 
 			
 			$('#industrialdesign').on('click', function(){
 				allContentTabs.hide();
-				$('#idContainer').show();
+				$('#idContainer-00').show();
+				$('#idContainer-01').show();
+
+			});
+			
+			$('#exstdesign').on('click', function(){
+				allContentTabs.hide();
+				$('#exstContainer-00').show();
+				$('#exstContainer-01').show();
+				$('#exstContainer-02').show();
+				$('#exstContainer-03').show();
 			});
 			
 			$('#interactiondesign').on('click', function(){
 				allContentTabs.hide();
-				$('#uxContainer').show();
+				$('#ixContainer-00').show();
+				$('#ixContainer-01').show();
 			});
 			
 			$('#communicationdesign').on('click', function(){
 				allContentTabs.hide();
-				$('#cdContainer').show();
+				$('#cdContainer-00').show();
+				$('#cdContainer-01').show();
+				$('#cdContainer-02').show();
+				
 			});
 			
 			$('#others').on('click', function(){
 				allContentTabs.hide();
-				$('#othersContainer').show();
+				$('#othersContainer-00').show();
+				$('#othersContainer-01').show();
+				$('#othersContainer-02').show();
 			});
+			
+			
 			
 		});
 	})(jQuery);
