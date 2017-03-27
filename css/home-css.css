@@ -525,6 +525,7 @@ ul li a:hover {
 	filter: grayscale(100%);}
 	
 .more-ex {
+	z-index: 1;
 	position: relative;
 	text-align: center;
 	top: 35px;
