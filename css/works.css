@@ -292,7 +292,7 @@ ul li a:hover {
 	width: 100%;}
 	
 .detail {
-	font-size: 15px;}
+	font-size: 16px;}
     }
 	
 .info {
@@ -308,6 +308,7 @@ ul li a:hover {
 	
 .detail {
 	font-family: "Cormorant Garamond";
+	font-size: 17px;
 	color: #737373;
 	margin-top: -1px;}
 	

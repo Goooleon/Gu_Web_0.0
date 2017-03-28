@@ -315,6 +315,7 @@ ul li a:hover {
     text-align: justify;
     text-justify: inter-word;
 	font-family: "Cormorant Garamond";
+	font-size: 17px;
 	}
 	
 /*for & tablet*/
@@ -368,15 +369,14 @@ ul li a:hover {
 	
 .cover p {
 	position: inherit;
-	padding: 5% 0;
+	padding: 5% 0 10% 0;
 	left: 7.5%;	
 	width: 85%;
 	margin: 0;
 	color: #737373;
     text-align: justify;
     text-justify: inter-word;
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
-
+	font-size: 16px;
 	}
 	}
 
