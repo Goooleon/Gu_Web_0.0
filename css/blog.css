@@ -211,15 +211,15 @@ ul li a:hover {
 	
 .describe h2{
 	font-size: 35px;
-	font-family: "pinghei";
+	font-family: "Raleway";
 	letter-spacing: 10px;
 	margin-bottom: 50px;
 	color: #262C2B;
 	}
 	
 .describe p{
-	font-size: 27px;
-	font-family: "Ping Hei Text";
+	font-size: 25px;
+	font-family: "Inconsolata";
 	line-height: 150%;
 	word-spacing: 1px;
 	color: #262C2B;
@@ -235,12 +235,25 @@ ul li a:hover {
 	font-size: 18px;}
 	}
 
-
 	
 .bowl {
 	position: relative;
 	width: 82%;
-	left: 9%;}
+	left: 9%;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 0.8s;
+	 /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
 .bowl a{
 	text-decoration: none;}
@@ -283,10 +296,11 @@ ul li a:hover {
 	padding: 1% 2%;
 	margin-top: 4%;
 	border-right: solid 1px #D0D0D0;
-	color: #262C2B;}
+	color: #262C2B;
+	font-family: "Raleway";}
 	
 .info-date {
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-family: "Cormorant Garamond";
 	color: #BCBCBC;
 	font-size: 13px;}
 	
@@ -300,7 +314,7 @@ ul li a:hover {
 	color: #737373;
     text-align: justify;
     text-justify: inter-word;
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-family: "Cormorant Garamond";
 	}
 	
 /*for & tablet*/
@@ -420,7 +434,7 @@ footer .btm-info{
 	color: #262C2B;}
 	
 footer .btm-info h2 {
-	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-family: "Raleway";
 	font-size: 30px;
 	margin-bottom: 6%;
 	letter-spacing: 2px;}
@@ -429,6 +443,7 @@ footer #thanks{
 	width: 40%;}
 
 footer #thanks a, p{
+	font-family: "Inconsolata";
 	color: #929292;
 	text-decoration: none;}
 

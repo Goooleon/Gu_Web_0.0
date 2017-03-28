@@ -212,15 +212,15 @@ ul li a:hover {
 	
 .describe h2{
 	font-size: 35px;
-	font-family: "pinghei";
+	font-family: "Raleway";
 	letter-spacing: 10px;
 	margin-bottom: 50px;
 	color: #262C2B;
 	}
 	
 .describe p{
-	font-size: 27px;
-	font-family: "Ping Hei Text";
+	font-size: 25px;
+	font-family: "Inconsolata";
 	line-height: 150%;
 	word-spacing: 1px;
 	color: #262C2B;
@@ -251,7 +251,7 @@ ul li a:hover {
 	
 .tabcontent, .card-margin {
 	width: 30%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
 	height: auto;
 	background-color: #FFFFFF;
 	margin-left: 1.66%;
@@ -302,28 +302,19 @@ ul li a:hover {
 	}
 	
 .info h3 {
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-family: "Raleway";
 	color: #262C2B;
 	margin-bottom:  -8px;}
 	
 .detail {
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Cormorant Garamond";
 	color: #737373;
 	margin-top: -1px;}
 	
 .date {
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-family: "Cormorant Garamond";
 	color: #BCBCBC;
 	font-size: 13px;}
-	
-.link {
-	text-decoration: none;
-	color: #262C2B;
-	font-size: 15px;
-	font-family: "Ping Hei Text";
-	letter-spacing: 1px;
-	word-spacing: 5px;
-	}
 
 
 
@@ -361,7 +352,7 @@ footer .btm-info{
 	color: #262C2B;}
 	
 footer .btm-info h2 {
-	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-family: "Raleway";
 	font-size: 30px;
 	margin-bottom: 6%;
 	letter-spacing: 2px;}
@@ -370,6 +361,7 @@ footer #thanks{
 	width: 40%;}
 
 footer #thanks a, p{
+	font-family: "Inconsolata";
 	color: #929292;
 	text-decoration: none;}
 

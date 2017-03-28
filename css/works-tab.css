@@ -13,8 +13,10 @@ div.tab {
 	padding-top: 30px;
 }
 
-/* Style the buttons inside the tab */
+/* Style the buttons insid
+e the tab */
 div.tab button {
+	font-family: "Inconsolata";
 	color: #434343;
 	background-color: transparent;
 	text-decoration: none;
@@ -37,7 +39,12 @@ div.tab button {
 }
 
 
-/* Fade in tabs */
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 0.8s;
+	 /* Fading effect takes 1 second */
+}
+
 @-webkit-keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
