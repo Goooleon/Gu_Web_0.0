@@ -529,6 +529,7 @@ ul li a:hover {
 @media (max-width:414px) {
 .gallery-item {
 	width: 32%;
+	margin: 0 0.66%;
 	margin-bottom: 1px;
 	}
 	
