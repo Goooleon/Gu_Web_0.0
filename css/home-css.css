@@ -505,7 +505,7 @@ ul li a:hover {
 	left: 1%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: flex-start;
 	align-content: space-around;
 	}
 	
@@ -513,6 +513,8 @@ ul li a:hover {
 .gallery-item {
 	margin-bottom: 2.5px;
 	width: 24.5%;
+	margin-left: 0.25%;
+	margin-right: 0.25%;
 	height: auto;
 }
 
