@@ -274,8 +274,6 @@ ul li a:hover {
 	font-size: 28px;
 	font-family: "Inconsolata";
 	line-height: 150%;
-	word-spacing: 2px;
-	letter-spacing: 2px;
 	color: #262C2B;
 	}
 	
@@ -309,8 +307,6 @@ ul li a:hover {
 	font-size: 20px;
 	font-family: "Inconsolata";
 	line-height: 150%;
-	word-spacing: 3px;
-	letter-spacing: 3px;
 	color: #262C2B;
 	}
 	
@@ -371,7 +367,6 @@ ul li a:hover {
 	font-size: 25px;
 	font-family: "Inconsolata";
 	line-height: 150%;
-	word-spacing: 1px;
 	color: #262C2B;
 	margin-bottom: 5px;
 	}
@@ -399,7 +394,6 @@ ul li a:hover {
 	font-size: 18px;
 	font-family: "Inconsolata";
 	line-height: 150%;
-	word-spacing: 2px;
 	color: #262C2B;
 	margin-bottom: 5px;
 	}
@@ -462,7 +456,7 @@ ul li a:hover {
 	width: 100%;}
 	
 .detail {
-	font-size: 14px;}
+	font-size: 15px;}
     }
 	
 .info {
@@ -539,6 +533,10 @@ ul li a:hover {
 	
 .more-ex {
 	top: 8px;
+	}
+	
+.link {
+	font-size: 12px;
 	}
 	}
 
