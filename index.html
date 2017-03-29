@@ -8,6 +8,8 @@
 <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500|Inconsolata|Raleway:600" rel="stylesheet"> 
 <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+<script src="Js/jquery.panzoom.js"></script>
+<script src="Js/jquery.mousewheel.js"></script>
 <script src="Js/nav-top.js"></script>
 </head>
 
@@ -55,8 +57,49 @@
         </p>
     </div>
 
-	<div class="map">
-    </div>
+    <section id="focal">
+      <div class="parent">
+        <div class="map">
+          <img src="img/amCharts-highlight.svg" width="100%">
+        </div>
+      </div>
+      
+     <div class="buttons">
+        <button class="zoom-in"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        <button class="zoom-out"><i class="fa fa-minus"></i></button>
+        <button class="reset"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+      </div>
+      <!--this is for button-->
+      <script>
+        (function() {
+          var $section = $('section').first();
+          $section.find('.map').panzoom({
+            $zoomIn: $section.find(".zoom-in"),
+            $zoomOut: $section.find(".zoom-out"),
+            $zoomRange: $section.find(".zoom-range"),
+            $reset: $section.find(".reset")
+          });
+        })();
+      </script>
+      
+      <!--this is for img-->
+      <script>
+        (function() {
+          var $section = $('#focal');
+          var $panzoom = $section.find('.map').panzoom();
+          $panzoom.parent().on('mousewheel.focal', function( e ) {
+            e.preventDefault();
+            var delta = e.delta || e.originalEvent.wheelDelta;
+            var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+            $panzoom.panzoom('zoom', zoomOut, {
+              animate: false,
+              focal: e
+            });
+          });
+        })();
+      </script>
+    </section>
+      
     </div>
 
 	<div class="content-grey">
@@ -174,7 +217,7 @@
         <input type="text" id="name" placeholder="Name"></input> 
         <input type="text" id="email" placeholder="E-mail address"></input>
         <textarea id="comment" rows="10%" placeholder="You may text here"></textarea>
-        <button type="button">Send</button>
+        <button class="send" type="button">Send</button>
         
         </div>
     </div>
