@@ -227,7 +227,7 @@ ul li a:hover {
 	margin-bottom: 5px;}
 
 /*for mobile*/
-@media (max-width:414px) {
+@media (max-width:450px) {
 .describe h2{
 	font-size: 25px;
 	}
@@ -273,7 +273,7 @@ ul li a:hover {
 
 
 /* this is for mobile*/
-@media (max-width:414px) {
+@media (max-width:450px) {
 .content {
 	left: 0;
 	width: 100%;
@@ -396,7 +396,7 @@ footer #follow a{
 	}
 	
 /* this is for mobile*/	
-@media (max-width:414px) {
+@media (max-width:450px) {
 	#follow i{
 	position: relative;
 	left: 4%;

@@ -15,10 +15,64 @@
 
 <body>
 
-<div class="wrapper">
-<div id="banner"></div>
-<div id="blur-bg"></div>
+  <div class="fullscreen background" style="background-image:url(img/banner.jpg);" data-img-width="1600" data-img-height="1064">
+
 </div>
+
+<script>
+/* fix vertical when not overflow
+call fullscreenFix() if .fullscreen content changes */
+function fullscreenFix(){
+    var h = $('body').height();
+    // set .fullscreen height
+    $(".content-b").each(function(i){
+        if($(this).innerHeight() > h){ $(this).closest(".fullscreen").addClass("overflow");
+        }
+    });
+}
+$(window).resize(fullscreenFix);
+fullscreenFix();
+
+/* resize background images */
+function backgroundResize(){
+    var windowH = $(window).height();
+    $(".background").each(function(i){
+        var path = $(this);
+        // variables
+        var contW = path.width();
+        var contH = path.height();
+        var imgW = path.attr("data-img-width");
+        var imgH = path.attr("data-img-height");
+        var ratio = imgW / imgH;
+        // overflowing difference
+        var diff = parseFloat(path.attr("data-diff"));
+        diff = diff ? diff : 0;
+        // remaining height to have fullscreen image only on parallax
+        var remainingH = 0;
+        if(path.hasClass("parallax")){
+            var maxH = contH > windowH ? contH : windowH;
+            remainingH = windowH - contH;
+        }
+        // set img values depending on cont
+        imgH = contH + remainingH + diff;
+        imgW = imgH * ratio;
+        // fix when too large
+        if(contW > imgW){
+            imgW = contW;
+            imgH = imgW / ratio;
+        }
+        //
+        path.data("resized-imgW", imgW);
+        path.data("resized-imgH", imgH);
+        path.css("background-size", imgW + "px " + imgH + "px");
+    });
+}
+$(window).resize(backgroundResize);
+$(window).focus(backgroundResize);
+backgroundResize();
+</script>
+
+
 
 <header>
 <a href="index.html"><div id="logo"></div></a>
@@ -224,7 +278,7 @@
 
     </div>
 
-    
+
     <footer>
     <div id="btt-arrow">
 	<a hhref="#" class="scrollToTop" ><svg version="1.1" id="图层_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -261,6 +315,8 @@
     </footer>
     
 </div>
+
+    
 
 </body>
 </html>
